@@ -1,0 +1,168 @@
+.brand-logo {
+	width: 100%;
+	z-index: 4;
+	position: fixed;
+	text-align: center;
+}
+
+.brand-logo img {
+	width: 250px;
+}
+
+#menu {
+	position: fixed;
+	z-index: 3;
+	padding: 0;
+	width: 200px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#menu li {
+	padding: 10px 20px;
+	width: 180px;
+}
+
+#menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#menu li.active {
+	background: #6c6c6c;
+}
+
+.home {
+	background: url(../img/i_dont_even_know.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.home h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 100px;
+	text-transform: uppercase;
+}
+
+.home h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+}
+
+.story {
+}
+
+.container {
+	display: flex;
+}
+
+.flex-full{
+	flex: 1;
+	height: 100vh;
+}
+
+.story-picture {
+	background: url(../img/table_with_computer_above.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.story-text {
+	background: #485563;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.story-text h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.story-text p {
+	text-align: center;
+	color: #fff;
+	padding: 0 60px;
+}
+
+.thoughts {
+/*	background: url(../img/working.jpg); */	
+	background-position: center;
+	background-size: cover; 
+}
+
+.thoughts-picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.thoughts-picture img{
+	width: 50vw;
+	height: 100vh;
+}
+
+.thoughts-text {
+	background: #485563;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.thoughts-text h1 {
+	text-align: center;
+}
+
+.thought-process-title {
+	padding: 0 20px;
+}
+
+.thought-process-text {
+	padding: 0 20px;
+}
+
+.let-me-know {
+	background: url(../img/server_room.jpg);
+	background-position: center;
+	background-size: cover;
+
+	color:  #fff;
+	text-align: center;
+}
+
+.let-me-know form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 500px;
+}
+
+.let-me-know form input,textarea {
+	font-size: 24px;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+	outline: none;
+	border-color: #838383;
+}
+
+.let-me-know form button {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 24px;
+}
