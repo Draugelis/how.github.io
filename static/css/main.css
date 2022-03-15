@@ -1,3 +1,16 @@
+@font-face {
+	font-family: bgrove;
+	src:  url(../font/bloominggrove/bgrove.otf);
+}
+
+body {
+	font-family: bgrove;
+}
+
+/*
+ * Logo
+*/
+
 .brand-logo {
 	width: 100%;
 	z-index: 4;
@@ -9,12 +22,16 @@
 	width: 250px;
 }
 
+/*
+ * Menu
+*/
+
 #menu {
 	position: fixed;
 	z-index: 3;
 	padding: 0;
 	width: 200px;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -23,6 +40,8 @@
 #menu li {
 	padding: 10px 20px;
 	width: 180px;
+	background: #0000008c;
+	border-radius: 0 10px 10px 0;
 }
 
 #menu a {
@@ -32,7 +51,7 @@
 }
 
 #menu li.active {
-	background: #6c6c6c;
+	background: #000000bf;
 }
 
 .home {
@@ -67,16 +86,15 @@
 }
 
 .story-picture {
-	background: url(../img/table_with_computer_above.jpg);
+	background: url(../img/searching.jpg);
 	background-position: center;
 	background-size: cover;
 }
 
 .story-text {
-	background: #485563;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: #485563bf;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #29323cbf, #485563bf);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #29323cbf, #485563df); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -114,11 +132,9 @@
 
 .thoughts-text {
 	background: #485563;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: -webkit-linear-gradient(to right, #485563, #29323c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -126,6 +142,7 @@
 
 .thoughts-text h1 {
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .thought-process-title {
@@ -140,7 +157,6 @@
 	background: url(../img/server_room.jpg);
 	background-position: center;
 	background-size: cover;
-
 	color:  #fff;
 	text-align: center;
 }
@@ -152,17 +168,26 @@
 	width: 500px;
 }
 
+.let-me-know h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .let-me-know form input,textarea {
+	font-family: bgrove;
 	font-size: 24px;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	outline: none;
-	border-color: #838383;
+	border: none;
+	color: #fff;
+	background-color: #000000ab;
 }
 
 .let-me-know form button {
 	padding: 10px;
 	border-radius: 10px;
+	font-family: bgrove;
 	font-size: 24px;
 }
